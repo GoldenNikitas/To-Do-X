@@ -1,0 +1,62 @@
+
+ul{
+    list-style-type: none;
+}
+.flex-header{
+    background-color: gainsboro;
+    display: flex;
+    flex: 0 1 auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+/*line through the text if task checked*/
+input[type=checkbox]:checked + span {
+    text-decoration: line-through;
+}
+#header{
+    font-size: 5vh;
+    margin: 0px;
+    width: 100%;
+    height: 5vh;
+    text-align: center;
+    color: azure;
+    background: linear-gradient(to right, rgba(124, 7, 135, 0.3), rgba(10, 19, 36, 0.8))
+}
+#input-task{
+    align-self: flex-end;
+    width: 80%;
+}
+#add-task-button{
+    align-self: flex-end;
+    width: 15%;
+    color: azure;
+    background-color: black;
+    border: solid darkslateblue;
+}
+#task-list{
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(white, rgba(10, 19, 36, 0.8));
+    min-height: 90vh;
+    height: 90%;
+}
+.tip{
+    font-size: 1.3em;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.delete-btn{
+    margin: 5px;
+    height: 30px;
+    color: azure;
+    background-color: black;
+    border: solid darkslateblue;
+}
+.task{
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 2;
+}
+
+
